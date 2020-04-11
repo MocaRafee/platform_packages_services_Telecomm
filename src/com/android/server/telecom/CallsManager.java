@@ -112,7 +112,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import org.codeaurora.ims.QtiCallConstants;
-import org.codeaurora.ims.utils.QtiCarrierConfigHelper;
+//import org.codeaurora.ims.utils.QtiCarrierConfigHelper;
 import org.codeaurora.ims.utils.QtiImsExtUtils;
 /**
  * Singleton.
@@ -547,7 +547,7 @@ public class CallsManager extends Call.ListenerBase
                 CarrierConfigManager.ACTION_CARRIER_CONFIG_CHANGED);
         intentFilter.addAction(SystemContract.ACTION_BLOCK_SUPPRESSION_STATE_CHANGED);
         context.registerReceiver(mReceiver, intentFilter);
-        QtiCarrierConfigHelper.getInstance().setup(mContext);
+        //QtiCarrierConfigHelper.getInstance().setup(mContext);
     }
 
     public void setIncomingCallNotifier(IncomingCallNotifier incomingCallNotifier) {
